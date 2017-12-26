@@ -209,6 +209,9 @@ section h1 span, footer h4 span{
 	font-family: 'Arial Bold';
 	color: #076e9f;	
 }
+.baner .author{
+	padding-right: 22px;
+}
 
 .baner .posts{
 	border-top: 1px dotted #ccc;
@@ -335,6 +338,10 @@ table tr:nth-child(3){
 	display: inline;
 	margin-left: 30px;
 	float: right;
+
+}
+.cards__top .information p{
+	margin-right: 50px;
 }
 .information button{
 	width: 72px;
