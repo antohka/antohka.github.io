@@ -1,11 +1,14 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>TaskFrontend</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
 </head>
 <body>
     <header>
@@ -99,11 +102,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="curreccy">
+                    <div class="currency">
                         <h4>Currency</h4>
-                        <div class="currency__usd">                   
-                        </div>
-                    </div>               
+                        <table>
+                            <tr>
+                                <th>Date</th>
+                                <th>Value</th>
+                                <th>Status</th>
+                                <th>Diff</th>
+                            </tr>
+                            <tr>
+                                <th>22.1</th>
+                                <th>459.5</th>
+                                <th><img src="img/line-chart-up.png" alt="pointer"></th>
+                                <th>+1.0</th>
+                            </tr>
+                            <tr>
+                                <th>21.1</th>
+                                <th>448.3</th>
+                                <th><img src="img/line-chart-down.png" alt="pointer"></th>
+                                <th>-2.3</th>
+                            </tr>
+                            <tr>
+                                <th>20.1</th>
+                                <th>450.6</th>
+                                <th><img src="img/line-chart-up.png" alt="pointer"></th>
+                                <th>+8.0</th>
+                            </tr>
+                        </table>                   
+                    </div>                    
                 </div>
                 <div class="col-md-9 col-sm-9 cards">
                     <div class="cards__top">
@@ -145,7 +172,7 @@
                             <span>34</span>
                         </div>
                     </div>
-                     <div class="cards__one effect">
+                    <div class="cards__one effect">
                         <div class="posted">
                             <p>LET’S MEET ON OLD MARKET SQUARE IT WILL BE FUN</p>
                             <p>Posted by <span>John Doe</span> on <span>10 Nov 2013</span></p>
@@ -170,7 +197,9 @@
             </div> 
     </section>
     <section class="map">
-        <h2>Where can i find more information</h2>
+        <div class="map__border">
+            <h2>Where can i find more information</h2>
+        </div>
         <div id="map_canvas"></div>
     </section>
     <footer>
