@@ -18,6 +18,7 @@ url('../fonts/ariali.svg#webfont') format('svg');
 font-weight: normal;
 font-style: normal;
 }
+
 @font-face{
 font-family: 'Arial';
 src: url('../fonts/arial.eot');
@@ -317,8 +318,7 @@ table tr:nth-child(3){
 }
 .box .box-circle{
 	display: flex;
-	flex-wrap: wrap;
-	width: 120px;
+	min-width: 120px;
 }
 .cards__top .box{
 	display: flex;
