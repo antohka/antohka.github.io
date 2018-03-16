@@ -1,220 +1,276 @@
 <!doctype html>
-<html>
+<html lang="zxx">
 <head>
     <meta charset="utf-8">
-    <title>TaskFrontend</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mileev Anton</title>
+    <link rel="icon" href="img/brainstorming.ico" type="images/x-ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <div class="header-top">
-            <h2>Poz<span>nan</span> - City<span>2</span>Live</h2>
-            <div class="socialnetwork">
-                <a href="#"><img src="img/evernote-big-logo.svg" alt="evernote"></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-delicious" aria-hidden="true"></i></a>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Swieze<span class="modify">ryby.</span><span class="modify">com</span></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">O nas</a></li>
+                        <li><a href="#">Asortyment</a></li>
+                        <li><a href="#">Współpraca</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><button type="button" class="btn menu--btn"><span class="btn__hover">Tel.500110110</span></button></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="menu">
-            <button>Home</button>
-            <button>Product</button>
-            <button>Services</button>
-            <button>Contact</button>
-        </div> 
+        </nav>
     </header>
-    <section class="main-logo">
-        <div class="main-logo__title">
-            <h1>Visit Poz<span>nan</span></h1>
-        </div>
-        <div class="main-logo__text">
-            <p>A city on the <span>warta</span> river in west-central <span>Poland</span>, the region called <span>greated poland.</span></p>
-        </div>
-        <div class="main-logo__absolute">
-            <div class="user">
-                <img src="img/person1.png" alt="foto">
-                <div class="coment">
-                    <p>I was in Poznan once. The architecture is really awesome.</p>
-                    <p>Joe Wisdom, architect</p>
-                </div>
-            </div>
-            <div class="user">
-                <img src="img/person2.png" alt="foto">
-                  <div class="coment">
-                    <p>I was lost in Poznan for 3 days. I was terrified.</p>
-                    <p>Little Box, child</p>
-                </div>
-            </div>
-            <div class="user">
-                <img src="img/person3.png" alt="foto">
-                  <div class="coment">
-                    <p>People used to look at me now they don’t see me.</p>
-                    <p>Eva Doe, exmodel</p>
-                </div>
-            </div>
-            <div class="user">
-                <img src="img/person4.png" alt="foto">
-                  <div class="coment">
-                    <p>I have a lot of penfriends in Poznań. I like writting to them and ...</p>
-                    <p>Emma Smith, child</p>
-                </div>
-            </div>    
-        </div>
-        <div class="main-logo__reviews">                
-        </div>
-    </section>
-    <section class="content">
-        <div class="container-fluid">
+    <main>
+        <div class='container-fluid'>
             <div class="row">
-                <div class="col-md-3 col-sm-3 baner">
-                    <div class="author">
-                        <h4>About author</h4>
-                        <p><span>John Doe</span> - lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta.</p>
+                <div class='top-block'>
+                    <div class='title'>
+                        <h1 class="title__text">Świeźe ryby</h1>
+                        <div class="title__subtext">Zobacz, co jeszcze oferujemy!</div>
                     </div>
-                    <div class="posts">
-                        <h4>Related posts</h4>
-                        <div class="posts__coment">
-                            <img src="img/posts1.png" alt="foto">
-                            <div>
-                                <p>Poznan at night</p>
-                                <p><i class="fa fa-comments" aria-hidden="true"></i> 10 coments</p>
-                            </div>
-                        </div>
-                        <div class="posts__coment second-coment">
-                            <img src="img/posts2.png" alt="foto">
-                            <div>
-                                <p>People to meet</p>
-                                <p><i class="fa fa-comments" aria-hidden="true"></i> 10 coments</p>
-                            </div>
-                        </div>
-                        <div class="posts__coment">
-                            <img src="img/posts3.png" alt="foto">
-                            <div>
-                                <p>Visit out office</p>
-                                <p><i class="fa fa-comments" aria-hidden="true"></i> 10 coments</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="currency">
-                        <h4>Currency</h4>
-                        <table>
-                            <tr>
-                                <th>Date</th>
-                                <th>Value</th>
-                                <th>Status</th>
-                                <th>Diff</th>
-                            </tr>
-                            <tr>
-                                <th>22.1</th>
-                                <th>459.5</th>
-                                <th><img src="img/line-chart-up.svg" alt="pointer"></th>
-                                <th>+1.0</th>
-                            </tr>
-                            <tr>
-                                <th>21.1</th>
-                                <th>448.3</th>
-                                <th><img src="img/line-chart-down.svg" alt="pointer"></th>
-                                <th>-2.3</th>
-                            </tr>
-                            <tr>
-                                <th>20.1</th>
-                                <th>450.6</th>
-                                <th><img src="img/line-chart-up.svg" alt="pointer"></th>
-                                <th>+8.0</th>
-                            </tr>
-                        </table>                   
-                    </div>                    
                 </div>
-                <div class="col-md-9 col-sm-9 cards">
-                    <div class="cards__top">
-                        <h2>WHY SHOULD YOU COME TO POZNAN</h2>
-                        <div class="box">
-                            <div class="box-circle">
-                                <div class="circle">25 Dec<br> 2017</div>
-                                <div class="circle">by<br>John Doe</div>
-                            </div>
-                            <div class="information">
-                                <p>
-                                    Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio  em nec elit. Sed posuere 
-                                    consectetur est at lobortis. Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla. 
-                                    Nulla vitae elit libero, a pharetra augue. Donec  ullamcorper nulla non metus auctor fringilla...
-                                </p>
-                                <button>read more</button>
-                                <div class="like_coment">
-                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                    <span>23 likes</span>
-                                    <i class="fa fa-comments" aria-hidden="true"></i>
-                                    <span>3 comments</span>    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cards__one effect">
-                        <div class="posted">
-                            <p>NEW ATTRACTIONS</p>
-                            <p>Posted by <span>John Doe</span> on <span>10 Nov 2013</span></p>
-                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, 
-                                nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                                Sed posuere consectetur est at lobortis.</p>
-                            <a href="#">more...</a>
-                        </div>
-                        <div class="line">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                            <span>12</span>
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                            <span>34</span>
-                        </div>
-                    </div>
-                    <div class="cards__one effect">
-                        <div class="posted">
-                            <p>LET’S MEET ON OLD MARKET SQUARE IT WILL BE FUN</p>
-                            <p>Posted by <span>John Doe</span> on <span>10 Nov 2013</span></p>
-                            <p>Donec sed odio dui. Duis mollis, est non commodo luctus, 
-                                nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                                Sed posuere consectetur est at lobortis.</p>
-                            <a href="#">more...</a>
-                        </div>
-                        <div class="line">
-                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                            <span>56</span>
-                            <i class="fa fa-comments" aria-hidden="true"></i>
-                            <span>55</span>
-                        </div>
-                    </div>
-                     <div class="cards__three effect">
-                        <p>your ad here</p>
-                    </div>
-                </div>    
             </div>
-            </div> 
-    </section>
-    <section class="map">
-        <div class="map__border">
-            <h2>Where can i find more information</h2>
         </div>
-        <div id="map_canvas"></div>
+        <div class="container">
+            <div class="row marg">
+                <div class="col-md-6">
+                    <div class="left">
+                        <h3 class="left__title">O nas</h3>
+                        <p class="left__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Morbi molestie egestas massa, et sollicitudin urna mattis
+                            faucibus. Praesent sagittis laoreet est, et efficitur enim
+                            lacinia id. Aenean imperdiet diam nec efficitur commodo. Morbi
+                            at purus tempus tellus tempus placerat. Sed faucibus sed elit
+                            at lacinia. Vestibulum ante ipsum primis in faucibus orci luctus
+                            et ultrices posuere cubilia Curae; Praesent posuere orci justo, eu
+                            fermentum quam cursus quis. Proin consequat molestie magna
+                            accumsan placerat. Nulla quis consectetur tortor. Nam viverra
+                            consectetur risus iaculis ultrices.
+                            <span class="telephone">Tel. 500110110</span>
+                            <button type="button" class="btn blue-btn"><span class="btn__hover">historia<br> naszej firmy</span></button>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right">
+                        <span class="sign">Nasz sklep</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="asorty">
+        <div class="upper-slider">
+            <h3 class="upper-slider__title">Asortyment</h3>
+            <p class="upper-slider__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Morbi molestie egestas massa, et sollicitudin urna mattis faucibus.
+                Praesent sagittis laoreet est, et efficitur enim lacinia id. Aenean
+                imperdiet diam nec efficitur commodo. Morbi at purus tempus tellus
+                tempus placerat. Sed faucibus sed elit at lacinia.
+            </p>
+        </div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slider__block">
+                    <img src="img/fish.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            DORADA ŚWIEŻA
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <img src="img/fish2.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            PSTRĄG PATROSZONY
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <img src="img/shrimp.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            KREWETKI TYGRYSIE
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <img src="img/fish3.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            MAKRELA WĘDZONA
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <img src="img/fish2.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            PSTRĄG PATROSZONY
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <img src="img/shrimp.png" class="slider-img" alt="">
+                    <div class="slider-content">
+                        <h4 class='slider-content__title'>
+                            KREWETKI TYGRYSIE
+                        </h4>
+                        <p class="slider-content__text">5,99ZŁ/SZT</p>
+                        <button class="btn slider-content__btn">Zamov</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn blue-btn"><span class="btn__hover">SPRAWDŹ<br>OŻLIWOŚCI</span></button>
+    </section>
+    <div class="container fish-block">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="fish-block__img"></div>
+                <h4 class="fish-block__title">
+                    CATERING
+                </h4>
+                <p class="fish-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="fish-block__img second"></div>
+                <h4 class="fish-block__title">
+                    SPRZEDAŻ
+                </h4>
+                <p class="fish-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <div class="fish-block__img third"></div>
+                <h4 class="fish-block__title">
+                    DOSTAWY
+                </h4>
+                <p class="fish-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                </p>
+            </div>
+        </div>
+        <button type="button" class="btn blue-btn"><span class="btn__hover">ZOBACZ CAŁY<br> SORTYMENT</span></button>
+    </div>
+        <div class="container-fluid">
+            <div class='row'>
+                <div class="map">
+                    <div class='map__mask'></div>
+                    <div class="text-container">
+                        <div class='text-container__content'>
+                            <h4>Kontakt</h4>
+                            <p>Lem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Morbi molestie egestas massa, et sollicitudin urna mattis
+                                faucibus. Praesent sagittis laoreet est, et efficitur
+                                enim lacinia id. Aenean imperdiet diam nec efficitur
+                                commodo. Morbi at purus tempus tellus tempus placerat.
+                                Sed faucibus sed elit at lacinia
+                            </p>
+                            <button class='btn btn-white'>
+                                Kontakt
+                            </button>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    <section>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <ul class="under-map-col">
+                    <li>O nas</li>
+                    <li>O nas</li>
+                    <li>Asortyment</li>
+                    <li>Współpraca</li>
+                    <li>Kontact</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="under-map-col">
+                    <li>WSPÓŁPRACA</li>
+                    <li>Warunki współpracy</li>
+                    <li>Cennikt</li>
+                    <li>Umowy</li>
+                    <li>Dostawy</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="under-map-col">
+                    <li>GODZINY OTWARCIA</li>
+                    <li><span class="bold">Pon. - Wt.</span> 6:00 - 19:00</li>
+                    <li><span class="bold">Śr. - Pt.</span> 6:00 - 18:00</li>
+                    <li><span class="bold">Sobota</span> 6:00 - 16:00</li>
+                    <li><span class="bold">Niedziela i święta</span> 7:00 - 14:00</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <ul class="under-map-col">
+                    <li>Kontact</li>
+                    <li>ul. Upalna 99</li>
+                    <li>15-600 Białystok</li>
+                    <li>tel. <span class="bold">500 110 110</span></li>
+                    <li>e-mail <span class="bold">sklep@swiezeryby.com</span></li>
+                </ul>
+            </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <div class="bottom-meny">
-            <h4>Poz<span>nan</span> - City<span>2</span>Live</h4>
-            <a href="#">Home</a>
-            <a href="#">Product</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+        <div class="container">
+            <div class="row">
+                <div class="flex">
+                    <div class="logo">&#9400;Swiezeryby.com 2016</div>
+                    <div class="logo">W GÓRĘ</div>
+                </div>
+            </div>
         </div>
-        <p>all rights reserved 2013</p>
     </footer>
-    <script src="js/script.js"></script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_AxNkRt0n8ZHJl8AFaicP7uoFQXUTVWw&callback=initialize">
-    </script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/noisy/1.2/jquery.noisy.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
