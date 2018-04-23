@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/antohka.github.io.iml" filepath="$PROJECT_DIR$/.idea/antohka.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/markupBoilplate.iml" filepath="$PROJECT_DIR$/.idea/markupBoilplate.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,145 @@
+
+.navbar {
+  padding-top: 30px;
+  transition: all 0.3s ease-out;
+  z-index: 100;
+  .navbar-toggle{
+    background-color: #333;
+    .icon-bar{
+      background: #fff;
+    }
+  }
+  .navbar-brand {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 15px;
+      right: 15px;
+      bottom: 5px;
+      width: auto;
+      height: 1px;
+      background: #fff;
+      opacity: 0;
+      transition: all 0.2s ease-out;
+    }
+    &:hover{
+      &:before{
+        opacity: 1;
+      }
+    }
+    .modify {
+      &:first-child {
+        font-weight: 400;
+      }
+      &:last-child {
+        font-weight: 300;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      display: none;
+    }
+  }
+  .nav {
+    &.navbar-nav{
+      &>li{
+        float: none;
+      }
+    }
+    li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 8px 10px;
+    }
+
+    .menu--btn {
+      background: $blue;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 12px;
+      .btn__hover{
+        display: inline-block;
+        position: relative;
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -2px;
+          width: auto;
+          height: 1px;
+          background: #fff;
+          opacity: 0;
+          transition: all 0.2s ease-out;
+        }
+        &:hover{
+          &:before{
+            opacity: 1;
+          }
+        }
+      }
+    }
+    a {
+      position: relative;
+      display: inline-block;
+      padding: 0px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.2s ease-out;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 1px;
+        right: 1px;
+        width: auto;
+        bottom: -2px;
+        height: 1px;
+        width: auto;
+        background: #fff;
+        opacity: 0;
+        transition: all 0.2s ease-out;
+      }
+      &:hover {
+        background: transparent;
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
+  }
+  @media(max-width: 768px) {
+    .nav {
+      background: rgba(0, 20, 97, 0.92);
+      li {
+        display: block;
+        padding: 15px 10px;
+        text-align: center;
+      }
+    }
+  }
+
+  &.bg-blue {
+    padding-top: 0;
+    background: rgba(0, 20, 97, 0.82);
+  }
+}
+
+
+
+
+
+
+
+
